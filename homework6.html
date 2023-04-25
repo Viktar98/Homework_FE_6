@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('\n');  //для лучшего вывода
+        for (i = 1; i <= 10; i += 2) {
+            console.log(`1) ${i}`)
+        }
+        console.log('\n');
+        for (i = 55; i >= 20; i -= 1) {
+            console.log(`2) ${i}`)
+        }
+        console.log('\n');
+        const numbers = [3, 5, 11, 2, 8, 1, 6];
+        let numbers_squared = [];
+        for (i = 0; i < numbers.length; i++) {
+            numbers_squared[i] = numbers[i] ** 2
+        }
+        let index = numbers_squared.length - 1;
+        let last_elem = numbers_squared[index];
+        console.log(`3) ${last_elem}`);
+        const user = {
+            first_name: 'Ivan',
+            last_name: 'Ivanov',
+            age: 20,
+            salary: 500
+        }
+        let string = `\nUser’s name is ${user.first_name} ${user.last_name}. He is ${user.age} years old.`;
+        console.log(string);
+        alert(string)
+    </script>
+</body>
+
+</html>
